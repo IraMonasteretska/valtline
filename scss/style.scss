@@ -1,0 +1,17 @@
+@import "normalize";
+@import "animate";
+@import "overall";
+@import "vars";
+@import "fonts";
+@import "slick";
+
+/* Components  */
+@import "components/first";
+@import "components/gallery";
+@import "components/category";
+@import "components/footer";
+
+
+
+/* Media queries */
+@import "media";
