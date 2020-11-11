@@ -69,17 +69,19 @@
 				</div>
 			</section>
 			<section class="map">
-				<div id="map"></div>
-				<script async defer
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqOsYyzW2cgxKpwOrnikTAqYuJuN-a3Ls&callback=initMap">
-				</script>
+				<div class="container">
+					<div id="map"></div>
+					<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqOsYyzW2cgxKpwOrnikTAqYuJuN-a3Ls&callback=initMap">
+					</script>
+				</div>
 			</section>
 			<section class="date">
 				<div class="container">
 					<h3 class="date__title">HOTEL? CHALET? <br>Chiedi OFFERTA diretta - senza impegno - al MIGLIOR PREZZO</h3>
 					<form action="#" class="date-form">
 						<input class="date-form__input datepicker-here" id="dateArrive" type="text" placeholder="Arrivo">
-						<input class="date-form__input" type="text" placeholder="Partenza">
+						<input class="date-form__input datepicker-here" id="dateBack" type="text" placeholder="Partenza">
 						<button class="date-form__btn">Ricerca</button>
 					</form>
 				</div>

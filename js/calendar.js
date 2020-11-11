@@ -19,6 +19,13 @@ $(document).ready(function(){
         }
     });
 
+    $('#dateBack').datepicker({
+        language: 'en',
+        navTitles: {
+            days: 'MM yyyy'
+        }
+    });
+
     function initMap() {alert("ok");}
 
     function initMap() {
@@ -46,7 +53,7 @@ $(document).ready(function(){
 		});
 
 		var InfoWindow = new google.maps.InfoWindow({
-			content: '<div class="hotel"><img src="../../../img/valtline/map-1.jpg"></div>'
+			content: '<div class="hotel"><img src="../img/valtline/map-1.jpg"></div>'
 		});
 
 		InfoWindow.open(myMap, marker);

@@ -68,6 +68,8 @@ $(document).ready(function(){
 
   /* hotels accordeon */
 
+  
+
   function checkPosition() {
     if (window.matchMedia('(max-width: 993px)').matches) {
       $('.hotels__title').click(function(){
@@ -80,6 +82,13 @@ $(document).ready(function(){
         $(this).next('.alphabet-mobile').slideToggle(500);
       });
 
+    }
+
+    if (window.matchMedia('(min-width: 993px)').matches) {
+      $('.sort__item').click(function(){
+        $(this).toggleClass('current');
+        $('.alphabet-pc').toggleClass('active');
+      });
     }
   }
 
