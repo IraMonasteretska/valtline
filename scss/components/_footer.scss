@@ -9,8 +9,10 @@
     padding-bottom: 48px;
     background: var(--bg-color);
     color: var(--white-color);
+
     &__link {
         margin-bottom: 24px;
+
         a {
             font-size: 16px;
             line-height: 24px;
@@ -22,17 +24,22 @@
             }
         }
     }
+
     &__left {
         width: 20%;
     }
+
     &__center {
         width: 48%;
     }
+
     &__right {
         width: 24%;
     }
+
     &__search {
         margin-bottom: 40px;
+
         input {
             background: transparent;
             border: none;
@@ -44,8 +51,10 @@
             text-transform: uppercase;
             color: #828282;
             padding-bottom: 14px;
+            outline: none;
         }
     }
+
     &__bottom {
         display: flex;
         justify-content: space-between;
@@ -58,18 +67,22 @@
     flex-wrap: wrap;
     flex-direction: column;
     height: 160px;
+
     &__item {
         width: 33.33%;
         padding-left: 20px;
         margin-bottom: 14px;
         position: relative;
+
         a {
             font-size: 16px;
             line-height: 24px;
+
             &:hover {
                 color: var(--orange-color);
             }
         }
+
         &::before {
             content: "";
             display: block;
@@ -86,6 +99,7 @@
 
 .mail {
     padding-bottom: 24px;
+
     &__title {
         font-weight: 600;
         font-size: 15px;
@@ -94,6 +108,7 @@
         color: #828282;
         margin-bottom: 14px;
     }
+
     &__link {
         font-size: 16px;
         line-height: 30px;
@@ -103,8 +118,9 @@
 .footer-form {
     &__group {
         position: relative;
-        margin-top: 14px;  
+        margin-top: 14px;
     }
+
     &__label {
         font-weight: 600;
         font-size: 15px;
@@ -113,6 +129,7 @@
         color: #828282;
         margin-bottom: 14px;
     }
+
     &__input {
         background: transparent;
         border: 1px solid var(--orange-color);
@@ -124,10 +141,12 @@
         width: 100%;
         padding-left: 14px;
         padding-right: 62px;
+
         &:focus {
             outline: none;
         }
     }
+
     &__btn {
         position: absolute;
         right: 0;
@@ -136,6 +155,10 @@
         height: 100%;
         width: 48px;
         border-radius: 4px;
+
+        &:hover {
+            background: #f0bd84;
+        }
     }
 }
 

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">	
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Valtline</title>
+	<title>Alta Rezia</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700;800&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -19,7 +19,7 @@
 						<a href="#">Italiano</a>
 					</span>
 				</div>
-				<ul class="header__list list">
+				<ul class="header__list list" style="transition: all 0.5s ease-out">
 					<li class="list__item">
 						<span class="bogoflags bogoflags-en"></span>
 						<span class="bogo-language-name">
@@ -122,13 +122,13 @@
 						</div>
 					</div>
 					<div class="slider-number number">
-						<div class="number__item number__item--one current">
+						<div class="number__item number__item--one current animated fadeInRight">
 							01
 						</div>
-						<div class="number__item number__item--two">
+						<div class="number__item number__item--two animated fadeInRight">
 							02
 						</div>
-						<div class="number__item number__item--three">
+						<div class="number__item number__item--three animated fadeInRight">
 							03
 						</div>
 					</div>
@@ -141,7 +141,7 @@
 					</h3>
 					<div class="gallery__cards">
 						<div class="card">
-							<a href="#" class="card__link">							
+							<a href="valtline.html" class="card__link">							
 								<img class="card__img" src="img/gallery/1.jpg" alt="компас в руке">
 							</a>
 							<h4 class="card__title">Escursioni</h4>
@@ -225,64 +225,97 @@
 							<p class="card__descr">leggi di più</p>
 						</div>
 					</div>
-					<button class="nextstep">Vedi altro</button>
+					<button class="nextstep nextstep__gallery">Vedi altro</button>
 				</div>
 			</section>
 			<section class="category">
 				<div class="container category-container">
 					<h3 class="section__title category__title">Categorie</h3>
-					<ul class="sort">
-						<li class="sort__item current">
-							<a href="#">Indice alfabetico</a>
-						</li>
-						<li class="sort__item">
+					<div class="sort">
+						<div class="sort__item">
+							<a class="sort__item--title">Indice alfabetico</a>
+						</div>
+						<div class="alphabet alphabet-mobile">
+							<ul class="alphabet__list">
+								<li class="alphabet__item current"><a href="#">ALL</a></li>
+								<li class="alphabet__item"><a href="#">A</a></li>
+								<li class="alphabet__item"><a href="#">B</a></li>
+								<li class="alphabet__item"><a href="#">C</a></li>
+								<li class="alphabet__item"><a href="#">D</a></li>
+								<li class="alphabet__item"><a href="#">E</a></li>
+								<li class="alphabet__item"><a href="#">F</a></li>
+								<li class="alphabet__item"><a href="#">G</a></li>
+								<li class="alphabet__item"><a href="#">H</a></li>
+								<li class="alphabet__item"><a href="#">I</a></li>
+								<li class="alphabet__item"><a href="#">J</a></li>
+								<li class="alphabet__item"><a href="#">K</a></li>
+								<li class="alphabet__item"><a href="#">L</a></li>
+								<li class="alphabet__item"><a href="#">M</a></li>
+								<li class="alphabet__item"><a href="#">N</a></li>
+								<li class="alphabet__item"><a href="#">O</a></li>
+								<li class="alphabet__item"><a href="#">P</a></li>
+								<li class="alphabet__item"><a href="#">Q</a></li>
+								<li class="alphabet__item"><a href="#">R</a></li>
+								<li class="alphabet__item"><a href="#">S</a></li>
+								<li class="alphabet__item"><a href="#">T</a></li>
+								<li class="alphabet__item"><a href="#">U</a></li>
+								<li class="alphabet__item"><a href="#">V</a></li>
+								<li class="alphabet__item"><a href="#">W</a></li>
+								<li class="alphabet__item"><a href="#">X</a></li>
+								<li class="alphabet__item"><a href="#">Y</a></li>
+								<li class="alphabet__item"><a href="#">Z</a></li>
+							</ul>
+						</div>
+						<div class="sort__item">
 							<a href="#">Top 10</a>
-						</li>
-						<li class="sort__item">
+						</div>
+						<div class="sort__item">
 							<a href="#">Top sports</a>
-						</li>
-						<li class="sort__item">
+						</div>
+						<div class="sort__item">
 							<a href="#">Top inverno</a>
-						</li>
-						<li class="sort__item">
+						</div>
+						<div class="sort__item">
 							<a href="#">Top estate</a>
-						</li>
-						<li class="sort__item">
+						</div>
+						<div class="sort__item">
 							<a href="#">Top autunno</a>
-						</li>
-						<li class="sort__item">
+						</div>
+						<div class="sort__item">
 							<a href="#">Top primavera</a>
-						</li>
-					</ul>
-					<ul class="alphabet">
-						<li class="alphabet__item"><a href="#" class="active">ALL</a></li>
-						<li class="alphabet__item"><a href="#">A</a></li>
-						<li class="alphabet__item"><a href="#">B</a></li>
-						<li class="alphabet__item"><a href="#">C</a></li>
-						<li class="alphabet__item"><a href="#">D</a></li>
-						<li class="alphabet__item"><a href="#">E</a></li>
-						<li class="alphabet__item"><a href="#">F</a></li>
-						<li class="alphabet__item"><a href="#">G</a></li>
-						<li class="alphabet__item"><a href="#">H</a></li>
-						<li class="alphabet__item"><a href="#">I</a></li>
-						<li class="alphabet__item"><a href="#">J</a></li>
-						<li class="alphabet__item"><a href="#">K</a></li>
-						<li class="alphabet__item"><a href="#">L</a></li>
-						<li class="alphabet__item"><a href="#">M</a></li>
-						<li class="alphabet__item"><a href="#">N</a></li>
-						<li class="alphabet__item"><a href="#">O</a></li>
-						<li class="alphabet__item"><a href="#">P</a></li>
-						<li class="alphabet__item"><a href="#">Q</a></li>
-						<li class="alphabet__item"><a href="#">R</a></li>
-						<li class="alphabet__item"><a href="#">S</a></li>
-						<li class="alphabet__item"><a href="#">T</a></li>
-						<li class="alphabet__item"><a href="#">U</a></li>
-						<li class="alphabet__item"><a href="#">V</a></li>
-						<li class="alphabet__item"><a href="#">W</a></li>
-						<li class="alphabet__item"><a href="#">X</a></li>
-						<li class="alphabet__item"><a href="#">Y</a></li>
-						<li class="alphabet__item"><a href="#">Z</a></li>
-					</ul>
+						</div>
+					</div>
+					<div class="alphabet">
+						<ul class="alphabet__list">
+							<li class="alphabet__item current"><a href="#">ALL</a></li>
+							<li class="alphabet__item"><a href="#">A</a></li>
+							<li class="alphabet__item"><a href="#">B</a></li>
+							<li class="alphabet__item"><a href="#">C</a></li>
+							<li class="alphabet__item"><a href="#">D</a></li>
+							<li class="alphabet__item"><a href="#">E</a></li>
+							<li class="alphabet__item"><a href="#">F</a></li>
+							<li class="alphabet__item"><a href="#">G</a></li>
+							<li class="alphabet__item"><a href="#">H</a></li>
+							<li class="alphabet__item"><a href="#">I</a></li>
+							<li class="alphabet__item"><a href="#">J</a></li>
+							<li class="alphabet__item"><a href="#">K</a></li>
+							<li class="alphabet__item"><a href="#">L</a></li>
+							<li class="alphabet__item"><a href="#">M</a></li>
+							<li class="alphabet__item"><a href="#">N</a></li>
+							<li class="alphabet__item"><a href="#">O</a></li>
+							<li class="alphabet__item"><a href="#">P</a></li>
+							<li class="alphabet__item"><a href="#">Q</a></li>
+							<li class="alphabet__item"><a href="#">R</a></li>
+							<li class="alphabet__item"><a href="#">S</a></li>
+							<li class="alphabet__item"><a href="#">T</a></li>
+							<li class="alphabet__item"><a href="#">U</a></li>
+							<li class="alphabet__item"><a href="#">V</a></li>
+							<li class="alphabet__item"><a href="#">W</a></li>
+							<li class="alphabet__item"><a href="#">X</a></li>
+							<li class="alphabet__item"><a href="#">Y</a></li>
+							<li class="alphabet__item"><a href="#">Z</a></li>
+						</ul>
+					</div>
 					<ul class="cat">
 						<li class="cat__item"><a href="#" >Agriturismo</a></li>
 						<li class="cat__item"><a href="#">Aperti sempre</a></li>
@@ -398,7 +431,7 @@
 					<div class="footer__right">
 						<div class="footer__mail mail">
 							<h2 class="mail__title">Email</h2>
-							<a href="#" class="mail__link">INFO@valtline.com</a>
+							<a href="mailto:INFO@valtline.com" class="mail__link">INFO@valtline.com</a>
 						</div>
 						<form action="#" class="footer-form">
 							<label class="footer-form__label" for="sendMail">Iscriviti alla nostra Newsletter</label>

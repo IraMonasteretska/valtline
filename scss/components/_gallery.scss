@@ -55,7 +55,7 @@
         top: 34px;
         left: 24px;
         pointer-events: none;
-        transition: transform 0.5s ease;
+        transition: transform 1s ease;
     }
 
     &__descr {
@@ -74,12 +74,14 @@
         right: 0;
         bottom: 0;
         z-index: 1;
-        &:hover {
+        transform: scale(1) rotate(0);
+        transition: filter 1s ease, transform 1s ease;
+        &:hover{
 
             cursor: pointer;
             transform: scale(1.1) rotate(-4deg);
             filter: blur(6px);
-            transition: transform 1s ease;
+            transition: filter 1s ease, transform 1s ease;
 
             &~.card__descr {
                 opacity: 1;
@@ -87,10 +89,8 @@
 
             &~.card__title {
                 transform: translateY(60px);
-                transition: transform 0.5s ease;
+                transition: transform 1s ease;
             }
-
-
         }
     }
 

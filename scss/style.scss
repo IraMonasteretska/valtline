@@ -1,5 +1,6 @@
 @import "normalize";
 @import "animate";
+@import "datepicker.min";
 @import "overall";
 @import "vars";
 @import "fonts";
@@ -10,6 +11,9 @@
 @import "components/gallery";
 @import "components/category";
 @import "components/footer";
+/* Page 2 */
+@import "components/excursion";
+@import "components/hotels";
 
 
 
