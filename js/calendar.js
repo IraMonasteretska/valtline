@@ -43,17 +43,17 @@ $(document).ready(function(){
 		var marker = new google.maps.Marker({
 			position: pos,
 			map: myMap,
-			icon: '../img/valtline/marker.svg'
+			icon: 'img/valtline/marker.svg'
 		});
 
 		var marker = new google.maps.Marker({
 			position: {lat: 46.464937, lng: 10.377374},
 			map: myMap,
-			icon: '../img/valtline/marker.svg'
+			icon: 'img/valtline/marker.svg'
 		});
 
 		var InfoWindow = new google.maps.InfoWindow({
-			content: '<div class="hotel"><img src="../img/valtline/map-1.jpg"></div>'
+			content: '<div class="hotel"><img src="img/valtline/map-1.jpg"></div>'
 		});
 
 		InfoWindow.open(myMap, marker);

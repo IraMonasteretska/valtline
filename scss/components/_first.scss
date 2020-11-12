@@ -1,7 +1,5 @@
 .header {
     display: flex;
-    align-items: center;
-    height: 64px;
     width: 100%;
     background: var(--bg-color);
     color: var(--white-color);
@@ -22,26 +20,9 @@
     width: 100%;
     margin: 0 auto;
     display: flex;
-}
-
-.current__lang {
-    margin-right: 50px;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 41px;
-        top: 0;
-        height: 2px;
-        background: #a9a9a9;
-    }
-}
-
-.list {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-
+    overflow: hidden;
+    align-items: center;
+    height: 64px;
 }
 
 /* Стили для выбору языка start */
@@ -106,14 +87,67 @@
     content: url('../img/lang/12-zh.svg');
 }
 
-.bogo-language-name a {
+.bogo-language-name {
     font-weight: 600;
     font-size: 11px;
     line-height: 16px;
 }
 
+.language {
+    display: none;
+}
+
+.list {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
 .list__item {
+    text-align: center;
+    z-index: 10;
+    height: 100%;
+    padding-top: 14px;
     cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        transform: translateX(-100px);
+        height: 2px;
+        background: #a9a9a9;
+        transition: width 1s ease, transform 1s ease;
+    }
+
+    &.active::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        background: #a9a9a9;
+        width: 40px;
+    }
+    &:hover {
+        &.list__item::after {  
+            width: 40px;
+            transform: translateX(-50%);
+            transition: transform 1s ease-in-out;
+        }
+    
+        &.list__item.active::after {
+            display: none;
+        }
+    }
 }
 
 /* Thematic block */
@@ -137,6 +171,10 @@
 .slider-for__item {
     position: relative;
     text-align: center;
+
+    &:focus {
+        outline: none;
+    }
 
     &:nth-child(2) {
         animation-duration: 2s;
@@ -173,6 +211,10 @@
         width: 350px;
         margin: 0 auto;
 
+        a {
+            outline: none;
+        }
+
         &--two {
             width: 370px;
         }
@@ -180,8 +222,30 @@
         &--three {
             width: 400px;
         }
+
+        &--link {
+            font-weight: 700;
+            color: var(--dark-color);
+            text-decoration: underline;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-name: text-link;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
 }
+
+@keyframes text-link {
+    0% {     
+        color: #5e9bf4;   
+    }   
+    100% {
+        color:#000;
+    }
+ }
 
 .number {
     margin-top: 30px;
@@ -199,6 +263,7 @@
     text-align: center;
     color: #F2F7FE;
     pointer-events: none;
+
     &:nth-child(2) {
         animation-duration: 2s;
     }

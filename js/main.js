@@ -5,6 +5,11 @@ $(document).ready(function(){
     
   });
 
+  $(".list__item").click(function() {
+    $('.list__item').removeClass('active');
+    $(this).toggleClass('active');
+  });
+
     
     /* Slick slider */ 
 
@@ -78,6 +83,7 @@ $(document).ready(function(){
 
       /*** Categories ***/
       $('.sort__item').click(function(){
+        $('.sort__item').removeClass('current');
         $(this).toggleClass('current');
         $(this).next('.alphabet-mobile').slideToggle(500);
       });
@@ -86,6 +92,12 @@ $(document).ready(function(){
 
     if (window.matchMedia('(min-width: 993px)').matches) {
       $('.sort__item').click(function(){
+        $('.sort__item').removeClass('current');
+        $(this).toggleClass('current');
+      });
+
+      $('.sort__item--first').click(function(){
+        $('.sort__item').removeClass('current');
         $(this).toggleClass('current');
         $('.alphabet-pc').toggleClass('active');
       });
