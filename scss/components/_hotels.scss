@@ -14,6 +14,90 @@
     width: 100%;
 }
 
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item {
+        overflow-y: visible;
+        height: 370px;
+        width: 272px;
+        position: relative;
+    }
+
+    &__content {
+        padding: 12px 16px 0;
+    }
+
+    &__cat {
+        font-size: 14px;
+        line-height: 20px;
+        color: #828282;
+    }
+
+    &__title {
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__img {
+        object-fit: fill;
+        height: 205px;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        color: #333333;
+
+        &--span {
+            color: #3ea2ff;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--white-color);
+        background: #DDA15E;
+        border-radius: 4px;
+        padding: 6px 0;
+        width: 100%;
+    }
+}
+
+.map .gm-style-iw-d {
+    overflow-y: hidden !important;
+}
+
+.map .gm-style-iw-c {
+    padding: 0;
+}
+
+button.gm-ui-hover-effect {
+    width: 24px !important;
+    height: 24px !important;
+    right: 5px !important;
+    top: 5px !important;
+    border-radius: 100px;
+    background: #fff url('../img/valtline/close_big.svg') !important;
+    opacity: 1;
+
+    img {
+        display: none !important;
+    }
+}
+
+
+
 .date {
     padding-bottom: 51px;
 
@@ -64,7 +148,7 @@
 }
 
 .datepicker--content {
-    padding: 26px 63px 35px;  
+    padding: 26px 63px 35px;
 }
 
 
