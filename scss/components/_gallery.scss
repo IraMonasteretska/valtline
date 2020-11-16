@@ -122,6 +122,7 @@
     color: var(--orange-color);
     outline: none;
     border-radius: 4px;
+    overflow-anchor: none;
 
     &:hover {
         color: var(--white-color);

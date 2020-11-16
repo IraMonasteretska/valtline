@@ -71,9 +71,46 @@ $(document).ready(function(){
     $('.excursion__text--hide').fadeToggle();
   });
 
-  /* hotels accordeon */
+  /*** Category  ***/
 
+  $("#alfabetico").click(function() {
+    $('.category__item').hide();
+    $('.category__first').show();
+  });
+
+  $("#top10").click(function() {
+    $('.category__item').hide();
+    $('.category__top').show();
+  });
+
+  $("#sports").click(function() {
+    $('.category__item').hide();
+    $('.category__sports').show();
+  });
+
+  $("#inverno").click(function() {
+    $('.category__item').hide();
+    $('.category__inverno').show();
+  });
+
+  $("#estate").click(function() {
+    $('.category__item').hide();
+    $('.category__estate').show();
+  });
+
+  $("#autunno").click(function() {
+    $('.category__item').hide();
+    $('.category__autunno').show();
+  });
+
+  $("#primavera").click(function() {
+    $('.category__item').hide();
+    $('.category__primavera').show();
+  });
+
+  /* hotels accordeon */
   
+
 
   function checkPosition() {
     if (window.matchMedia('(max-width: 993px)').matches) {
@@ -96,7 +133,7 @@ $(document).ready(function(){
         $(this).toggleClass('current');
       });
 
-      $('.sort__item--first').click(function(){
+      $('#alfabetico').click(function(){
         $('.sort__item').removeClass('current');
         $(this).toggleClass('current');
         $('.alphabet-pc').toggleClass('active');

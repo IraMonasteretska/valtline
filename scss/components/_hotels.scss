@@ -12,6 +12,7 @@
 #map {
     height: 574px;
     width: 100%;
+    overflow-anchor: none;
 }
 
 .map {
@@ -21,8 +22,8 @@
 
     &__item {
         overflow-y: visible;
-        height: 370px;
-        width: 272px;
+        height: 270px;
+        width: 232px;
         position: relative;
     }
 
@@ -44,8 +45,8 @@
     }
 
     &__img {
-        object-fit: fill;
-        height: 205px;
+        object-fit: cover;
+        height: 130px;
         width: 100%;
     }
 
@@ -62,7 +63,7 @@
     &__btn {
         text-align: center;
         display: block;
-        margin-top: 20px;
+        margin-top: 10px;
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
@@ -95,8 +96,6 @@ button.gm-ui-hover-effect {
         display: none !important;
     }
 }
-
-
 
 .date {
     padding-bottom: 51px;
@@ -223,6 +222,7 @@ button.gm-ui-hover-effect {
 
     &__nextstep {
         margin-bottom: 48px;
+        display: none;
     }
 }
 
@@ -271,6 +271,13 @@ button.gm-ui-hover-effect {
         font-weight: 600;
         line-height: 24px;
         transition: color 0.3s ease;
+    }
+
+    &__sondrio {
+        display: block;
+        &:nth-child(n + 16) {
+            display: none;
+        }
     }
 
 }

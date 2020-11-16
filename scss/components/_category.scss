@@ -1,6 +1,14 @@
 .category {
     background: url('../img/cat-bg.png') no-repeat center top;
     padding: 290px 0 130px;
+
+    &__item {
+        display: none;
+    }
+
+    &__first {
+        display: block;
+    }
 }
 
 .sort {
@@ -12,7 +20,7 @@
         position: relative;
         text-align: center;
         background: #f2f7fe;
-        flex-grow: 1;   
+        flex-grow: 1;
         transition: color 0.5s ease;
         cursor: pointer;
 
@@ -45,7 +53,7 @@
         }
 
         &:hover {
-            
+
             color: #74bcff;
             transition: color 0.5s ease;
         }
@@ -66,11 +74,13 @@
     display: block;
 }
 
-.alphabet {    
+.alphabet {
     display: none;
+
     &.active {
         display: block;
     }
+
     &__list {
         max-width: 943px;
         display: flex;
@@ -78,10 +88,12 @@
         margin: 0 auto;
         margin-bottom: 64px;
     }
+
     &__item {
         position: relative;
         display: flex;
         flex-grow: 1;
+
         &:not(:last-child)::after {
             content: '';
             display: block;
@@ -93,10 +105,12 @@
             width: 1px;
             height: 11px;
         }
+
         &.current {
             color: var(--orange-color);
             transition: color 0.5s ease;
         }
+
         a {
             display: block;
             text-align: center;
@@ -105,10 +119,11 @@
             line-height: 18px;
             width: 100%;
             transition: color 0.5s ease;
+
             &:hover {
                 color: var(--orange-color);
                 transition: color 0.5s ease;
-             }
+            }
         }
     }
 }
@@ -122,18 +137,21 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 275px;
+
     &__item {
         width: 20%;
         margin-bottom: 6px;
+
         a {
             font-family: "Roboto", sans-serif;
             font-size: 16px;
             line-height: 24px;
-            color:var(--blue-color);
+            color: var(--blue-color);
             transition: opacity 0.5s ease;
+
             &:hover {
-               opacity: 0.7;
-               transition: opacity 0.5s ease;
+                opacity: 0.7;
+                transition: opacity 0.5s ease;
             }
         }
     }
