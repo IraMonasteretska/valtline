@@ -536,6 +536,22 @@
 		}
 	}
 
+	.map {
+		&__item {
+			width: 172px;
+			height: 235px;
+		}
+		&__img {
+			height: 110px;
+		}
+		&__content {
+			padding: 10px 10px;
+		}
+		&__title {
+			margin-top: 0;
+		}
+	}
+
 	.gallery__title {
 		font-size: 18px;
 	}
